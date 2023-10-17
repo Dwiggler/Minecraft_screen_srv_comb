@@ -9,8 +9,8 @@ Restart=on-failure
 RestartSec=10
 User=root
 WorkingDirectory=/opt/minecraft/mainsurvival/
-ExecStart=/opt/minecraft/mainsurvival/runmc.sh
-ExecStop=/opt/minecraft/mainsurvival/stopmc.sh
+ExecStart=/opt/minecraft/mainsurvival/mcsrv.sh start
+ExecStop=/opt/minecraft/mainsurvival/mcsrv.sh stop
 
 [Install]
 WantedBy=multi-user.target
